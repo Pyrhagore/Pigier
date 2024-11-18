@@ -1,0 +1,148 @@
+.pas_de_retrait{
+    list-style-position: inside;
+}
+.retrait{
+    list-style-position: outside;
+}
+
+.cercle {
+    list-style-type: circle;
+  }
+  
+  .carre {
+    list-style-type: square;
+  }
+  
+  .rien {
+    list-style-type: none;
+  }
+  
+  .commence_a_zero {
+    list-style-type: decimal-leading-zero;
+  }
+  
+  .lettres_minuscules {
+    list-style-type: lower-alpha;
+  }
+  
+  .chiffres_romains {
+    list-style-type: upper-roman;
+  }
+  
+  .lettres_grecques {
+    list-style-type: lower-greek;
+  }
+
+  h2{
+    text-indent: 20px;
+    font-family: Arial,Verdana,"Time New Roman",serif;
+  }
+
+  em{
+    background-color: yellow;
+  }
+  strong{
+    color: red;
+  }
+  
+  a{
+    color: blue;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  table{
+    
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td,th{
+    border: 1px solid black;
+  }
+
+  .as{
+    font-style: italic;
+ 
+  }
+  .con{
+    color: blue;
+   font-weight: bold;
+  }
+.ad{
+    background-color: rgb(41, 168, 41);
+}
+.em{
+    background-color: yellow;
+}
+.re{
+    background-color: rgb(238, 39, 39);
+}
+.rg{
+    color: green;
+}
+.en ul li a{
+  text-decoration: none;
+}
+.en ul li{
+  list-style-type: none;
+}
+.en ul li a :hover{
+  background-color: aliceblue;
+}
+
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.section-title {
+  background-color: rgb(24, 144, 224);;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.profile-info, .skills, .education, .projects, .languages, .hobbies {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  padding-left: 20px;
+  
+}
+
+ul li {
+  margin-bottom: 10px;
+ 
+}
+.kk{
+  color: black;
+}
+
+footer{
+  background-color: aliceblue;
+ padding: 10px;
+}
+
+.acc{
+  background-color: aliceblue;
+ 
+}
+.bu{
+  background-color: #3cd849;
+}
+.cu{
+  background-color: red;
+}
+footer{
+  background-color: rgb(24, 144, 224);
+}
