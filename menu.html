@@ -1,146 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navigation</title>
     <style>
-        /* Global styles */
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* Change background color here */
-            background: linear-gradient(to right, aliceblue, aliceblue); /* Example gradient */
-        }
+      /* Global styles */
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* Change background color here */
+        background: linear-gradient(
+          to right,
+          aliceblue,
+          aliceblue
+        ); /* Example gradient */
+      }
 
-        /* Navigation styles */
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+      /* Navigation styles */
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
 
-        nav ul li {
-            --c: rgb(24, 144, 224);
-            color: var(--c);
-            font-size: 16px;
-            border: 0.3em solid var(--c);
-            border-radius: 0.5em;
-            width: 12em;
-            height: 3em;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-family: sans-serif;
-            letter-spacing: 0.1em;
-            text-align: center;
-            line-height: 3em;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-            transition: 0.5s;
-            margin: 1em;
-        }
+      nav ul li {
+        --c: rgb(24, 144, 224);
+        color: var(--c);
+        font-size: 16px;
+        border: 0.3em solid var(--c);
+        border-radius: 0.5em;
+        width: 12em;
+        height: 3em;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: sans-serif;
+        letter-spacing: 0.1em;
+        text-align: center;
+        line-height: 3em;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: 0.5s;
+        margin: 1em;
+      }
 
-        nav ul li span {
-            position: absolute;
-            width: 25%;
-            height: 100%;
-            background-color: var(--c);
-            transform: translateY(150%);
-            border-radius: 50%;
-            left: calc((var(--n) - 1) * 25%);
-            transition: 0.5s;
-            transition-delay: calc((var(--n) - 1) * 0.1s);
-            z-index: -1;
-        }
+      nav ul li span {
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        background-color: var(--c);
+        transform: translateY(150%);
+        border-radius: 50%;
+        left: calc((var(--n) - 1) * 25%);
+        transition: 0.5s;
+        transition-delay: calc((var(--n) - 1) * 0.1s);
+        z-index: -1;
+      }
 
-        nav ul li:hover {
-            color: black;
-            cursor: pointer;
-        }
+      nav ul li:hover {
+        color: black;
+        cursor: pointer;
+      }
 
-        nav ul li:hover span {
-            transform: translateY(0) scale(2);
-        }
+      nav ul li:hover span {
+        transform: translateY(0) scale(2);
+      }
 
-        nav ul li span:nth-child(1) {
-            --n: 1;
-        }
+      nav ul li span:nth-child(1) {
+        --n: 1;
+      }
 
-        nav ul li span:nth-child(2) {
-            --n: 2;
-        }
+      nav ul li span:nth-child(2) {
+        --n: 2;
+      }
 
-        nav ul li span:nth-child(3) {
-            --n: 3;
-        }
+      nav ul li span:nth-child(3) {
+        --n: 3;
+      }
 
-        nav ul li span:nth-child(4) {
-            --n: 4;
-        }
+      nav ul li span:nth-child(4) {
+        --n: 4;
+      }
 
-        /* Styles for links inside list items */
-        nav ul li a {
-            display: block;
-            text-decoration: none;
-            color: inherit;
-            width: 100%;
-            height: 100%;
-            line-height: inherit;
-            text-align: center;
-            font-weight: bold;
-            transition: color 0.3s, background-color 0.3s;
-        }
+      /* Styles for links inside list items */
+      nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        width: 100%;
+        height: 100%;
+        line-height: inherit;
+        text-align: center;
+        font-weight: bold;
+        transition: color 0.3s, background-color 0.3s;
+      }
 
-        nav ul li a:hover {
-            color: white;
-            background-color: var(--c);
-        }
+      nav ul li a:hover {
+        color: white;
+        background-color: var(--c);
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <ul><br>
-            <li>
-                <a href="acc.html" target="x">Accueil</a>
-                <span></span><span></span><span></span><span></span>
-            </li>
-            <li>
-                <a href="Page1.html" target="x">Université PIGIER</a>
-                <span></span><span></span><span></span><span></span>
-            </li>
-            <li>
-                <a href="Page2.html" target="x">Mes infos</a>
-                <span></span><span></span><span></span><span></span>
-            </li>
-            <li>
-                <a href="Page3.html" target="x">Infos PIGIER Bénin</a>
-                <span></span><span></span><span></span><span></span>
-            </li>
-            <li>
-                <a href="page4.html" target="x">Les listes</a>
-                <span></span><span></span><span></span><span></span>
-            </li>
-            <li>
-                <a href="Page5.html" target="x">Les tableaux</a>
-                <span></span><span></span><span></span><span></span>
-            </li>
-            <li>
-                <a href="Page6.html" target="x">Formulaire</a>
-                <span></span><span></span><span></span><span></span>
-            </li>
-            <li>
-                <a href="cv.html" target="x">Curriculum Vitae</a>
-                <span></span><span></span><span></span><span></span>
-            </li>
-        </ul>
+      <ul>
+        <br />
+        <li>
+          <a href="acc.html" target="x">Accueil</a>
+          <span></span><span></span><span></span><span></span>
+        </li>
+        <li>
+          <a href="Page1.html" target="x">Université PIGIER BENIN</a>
+          <span></span><span></span><span></span><span></span>
+        </li>
+        <li>
+          <a href="Page2.html" target="x">Mes infos</a>
+          <span></span><span></span><span></span><span></span>
+        </li>
+        <li>
+          <a href="Page3.html" target="x">Infos PIGIER Bénin</a>
+          <span></span><span></span><span></span><span></span>
+        </li>
+        <li>
+          <a href="page4.html" target="x">Les listes......</a>
+          <span></span><span></span><span></span><span></span>
+        </li>
+        <li>
+          <a href="Page5.html" target="x">Les tableaux</a>
+          <span></span><span></span><span></span><span></span>
+        </li>
+        <li>
+          <a href="Page6.html" target="x">Formulaire</a>
+          <span></span><span></span><span></span><span></span>
+        </li>
+        <li>
+          <a href="cv.html" target="x">Curriculum Vitae</a>
+          <span></span><span></span><span></span><span></span>
+        </li>
+      </ul>
     </nav>
-</body>
-
+  </body>
 </html>
